@@ -15,8 +15,9 @@ body {
   font: normal 400 14px/1.4 "Montserrat", sans-serif;
 }
 
-a {
+a, a:active {
   text-decoration: none;
+  color: #000;
 }
 
 li {
@@ -25,4 +26,48 @@ li {
 
 .header {
   padding: 14px 70px 13.24px 70px;
+  display: flex;
+}
+
+.header__logo {
+  width: 140px;
+}
+
+.menu {
+  margin: 27px 0 15.76px 50px;
+  font-size: 16px;
+}
+
+.menu__item {
+  margin-left: 40px;
+}
+
+.menu__item:nth-child(1) {
+  margin: 0;
+}
+
+.user-buttons {
+  margin: 6px 0 6.76px 104px;
+}
+
+.user-buttons__record, .user-buttons__login {
+  color: #fff;
+  font-weight: 600;
+  height: 50px;
+}
+
+.user-buttons__record {
+  width: 260px;
+  background: #1438A5;
+}
+
+.user-buttons__login {
+  width: 100px;
+  background: #BE1736;
+  margin-left: 20px;
+}
+
+.preview {
+  background: url("../img/background.jpg");
+  min-height: 400px;
 }
